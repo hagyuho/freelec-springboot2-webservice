@@ -1,0 +1,15 @@
+com/hadoyaji/bookspringboot/domain/posts/PostsRepositoryTest.java
+ com.hadoyaji.bookspringboot.domain.posts.PostsRepositoryTest
+com/hadoyaji/bookspringboot/service/posts/PostsService.java
+ com.hadoyaji.bookspringboot.service.posts.PostsService
+com/hadoyaji/bookspringboot/web/dto/HelloResponseDtoTest.java
+ com.hadoyaji.bookspringboot.web.dto.HelloResponseDtoTest
+com/hadoyaji/bookspringboot/web/HelloControllerTest.java
+ com.hadoyaji.bookspringboot.web.HelloControllerTest
+com/hadoyaji/bookspringboot/web/dto/PostsSaveRequestDto.java
+ com.hadoyaji.bookspringboot.web.dto.PostsSaveRequestDto
+ com.hadoyaji.bookspringboot.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
+com/hadoyaji/bookspringboot/web/PostsApiController.java
+ com.hadoyaji.bookspringboot.web.PostsApiController
+com/hadoyaji/bookspringboot/web/PostsApiControllerTest.java
+ com.hadoyaji.bookspringboot.web.PostsApiControllerTest
