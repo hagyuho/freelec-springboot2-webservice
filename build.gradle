@@ -25,9 +25,6 @@ repositories {
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.18'
-    implementation 'org.projectlombok:lombok:1.18.18'
-    implementation 'org.projectlombok:lombok:1.18.18'
-    implementation 'org.projectlombok:lombok:1.18.18'
 
     implementation 'junit:junit:4.13.1'
     compile('org.projectlombok:lombok')
@@ -37,5 +34,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')
+    compile('org.springframework.boot:spring-boot-starter-mustache')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

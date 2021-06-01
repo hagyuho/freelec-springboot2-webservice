@@ -1,8 +1,10 @@
-com/hadoyaji/book/springboot/web/HelloControllerTest.java
- com.hadoyaji.book.springboot.web.HelloControllerTest
+com/hadoyaji/book/springboot/web/PostsApiControllerTest.java
+ com.hadoyaji.book.springboot.web.PostsApiControllerTest
 com/hadoyaji/book/springboot/web/dto/HelloResponseDtoTest.java
  com.hadoyaji.book.springboot.web.dto.HelloResponseDtoTest
 com/hadoyaji/book/springboot/domain/posts/PostsRepositoryTest.java
  com.hadoyaji.book.springboot.domain.posts.PostsRepositoryTest
-com/hadoyaji/book/springboot/web/PostsApiControllerTest.java
- com.hadoyaji.book.springboot.web.PostsApiControllerTest
+com/hadoyaji/book/springboot/web/HelloControllerTest.java
+ com.hadoyaji.book.springboot.web.HelloControllerTest
+com/hadoyaji/book/springboot/web/indexControllerTest.java
+ com.hadoyaji.book.springboot.web.indexControllerTest
