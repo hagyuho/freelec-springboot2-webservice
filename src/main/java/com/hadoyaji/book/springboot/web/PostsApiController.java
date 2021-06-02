@@ -1,6 +1,6 @@
 package com.hadoyaji.book.springboot.web;
 
-import com.hadoyaji.book.springboot.web.dto.PostResponseDto;
+import com.hadoyaji.book.springboot.web.dto.PostsResponseDto;
 import com.hadoyaji.book.springboot.web.dto.PostsSaveRequestDto;
 import com.hadoyaji.book.springboot.web.dto.PostsUpdateRequestDto;
 import com.hadoyaji.book.springboot.service.posts.PostsService;
@@ -30,7 +30,7 @@ public class PostsApiController {
     }
 
     @GetMapping("api/v1/posts/{id}")
-    public PostResponseDto findById(@PathVariable Long id){
+    public PostsResponseDto findById(@PathVariable Long id){
         return postsService.findById(id);
     }
 

@@ -4,7 +4,7 @@ import com.hadoyaji.book.springboot.web.dto.PostsListResponseDto;
 import com.hadoyaji.book.springboot.web.dto.PostsSaveRequestDto;
 import com.hadoyaji.book.springboot.domain.posts.Posts;
 import com.hadoyaji.book.springboot.domain.posts.PostsRepository;
-import com.hadoyaji.book.springboot.web.dto.PostResponseDto;
+import com.hadoyaji.book.springboot.web.dto.PostsResponseDto;
 import com.hadoyaji.book.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -38,9 +38,9 @@ public class PostsService {
     }
 
     @Transactional(readOnly = true)
-    public PostResponseDto findById(Long id) {
+    public PostsResponseDto findById(Long id) {
         Posts entity = postsRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
-        return new PostResponseDto(entity);
+        return new PostsResponseDto(entity);
     }
 
     @Transactional(readOnly = true)

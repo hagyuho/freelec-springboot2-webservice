@@ -1,14 +1,12 @@
 package com.hadoyaji.book.springboot.web;
 
 import com.hadoyaji.book.springboot.service.posts.PostsService;
-import com.hadoyaji.book.springboot.web.dto.PostResponseDto;
+import com.hadoyaji.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import javax.validation.constraints.Past;
 
 @RequiredArgsConstructor
 @Controller
@@ -29,7 +27,7 @@ public class IndexController {
 
     @GetMapping("/posts/update/{id}")
     public String postUpdate(@PathVariable Long id, Model model){
-        PostResponseDto dto = postsService.findById(id);
+        PostsResponseDto dto = postsService.findById(id);
         model.addAttribute("post",dto);
         return "posts-update";
     }

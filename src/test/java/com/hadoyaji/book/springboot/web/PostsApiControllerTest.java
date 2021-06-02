@@ -2,7 +2,6 @@ package com.hadoyaji.book.springboot.web;
 
 import com.hadoyaji.book.springboot.domain.posts.Posts;
 import com.hadoyaji.book.springboot.domain.posts.PostsRepository;
-import com.hadoyaji.book.springboot.web.dto.PostResponseDto;
 import com.hadoyaji.book.springboot.web.dto.PostsSaveRequestDto;
 import com.hadoyaji.book.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
@@ -95,6 +94,27 @@ public class PostsApiControllerTest {
         List<Posts> all = postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
+
+    }
+
+    @Test
+    public void Posts_삭제된다() throws Exception{
+        //given
+        Posts savePosts = postsRepository.save(Posts.builder()
+                .title("title")
+                .content("content")
+                .author("hadoyaji")
+                .build());
+
+        Long deleteId = savePosts.getId();
+        String url = "http://localhost:" + port + "/api/v1/posts/" + deleteId;
+
+
+        //when
+        restTemplate.delete(url,deleteId);
+        //then
+        List<Posts> all = postsRepository.findAll();
+        assertThat(all.size()).isEqualTo(0);
 
     }
 
