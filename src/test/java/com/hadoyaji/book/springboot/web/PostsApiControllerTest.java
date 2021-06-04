@@ -73,7 +73,6 @@ public class PostsApiControllerTest {
         String url = "http://localhost:" + port + "/api/v1/posts";
 
         //when
-        ResponseEntity<Long> responseEntity = restTemplate.postForEntity(url, requestDto, Long.class);
         mvc.perform(post(url)
                     .contentType(MediaType.APPLICATION_JSON_UTF8)
                     .content(new ObjectMapper().writeValueAsString(requestDto)))
@@ -146,6 +145,7 @@ public class PostsApiControllerTest {
     }
 
     @Test
+    @WithMockUser(roles="USER")
     public void Post_전체조회() throws Exception {
         //given
         Posts savePosts = postsRepository.save(Posts.builder()
@@ -162,9 +162,12 @@ public class PostsApiControllerTest {
 
         //when
         ResponseEntity<String> responseEntity = restTemplate.getForEntity(url, String.class);
-        //then
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        mvc.perform(get(url)
+                    .contentType(MediaType.APPLICATION_JSON_UTF8)
+                    .content(new ObjectMapper().writeValueAsString(id)))
+                    .andExpect(status().isOk());
 
+        //then
         List<Posts> all = postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
