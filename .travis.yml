@@ -24,7 +24,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: freelec-springboot-build-hadoyaji
-    region: ap-northheast-2
+    region: ap-northeast-2
     skip_cleanup: true
     acl: private
     local_dir: deploy
