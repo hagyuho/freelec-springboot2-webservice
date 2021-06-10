@@ -29,13 +29,12 @@ deploy:
     acl: private
     local_dir: deploy
     wait-until-deployed: true
+
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
-
     bucket: freelec-springboot-build-hadoyaji
     key: freelec-springboot2-webservice.zip
-
     bundle_type: zip
     application: freelec-springboot2-webservice
     deployment_group: freelec-springboot2-webservice-group
