@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.hadoyaji.book.springboot.web.profileControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.hadoyaji.book.springboot.web.profileControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.hadoyaji.book.springboot.web.html">com.hadoyaji.book.springboot.web</a> &gt; profileControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.003s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">profile은_인증없이_호출된다</td>
+<td class="success">1.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:53:41.452 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:41.467 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:53:41.485 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:53:41.516 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hadoyaji.book.springboot.web.profileControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:53:41.547 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hadoyaji.book.springboot.web.profileControllerTest], using SpringBootContextLoader
+14:53:41.554 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hadoyaji.book.springboot.web.profileControllerTest]: class path resource [com/hadoyaji/book/springboot/web/profileControllerTest-context.xml] does not exist
+14:53:41.555 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hadoyaji.book.springboot.web.profileControllerTest]: class path resource [com/hadoyaji/book/springboot/web/profileControllerTestContext.groovy] does not exist
+14:53:41.555 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hadoyaji.book.springboot.web.profileControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:53:41.557 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hadoyaji.book.springboot.web.profileControllerTest]: profileControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:53:41.663 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.098 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\workspaceSpring\freelec-springboot2-webservice\build\classes\java\main\com\hadoyaji\book\springboot\Application.class]
+14:53:42.104 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hadoyaji.book.springboot.Application for test class com.hadoyaji.book.springboot.web.profileControllerTest
+14:53:42.491 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hadoyaji.book.springboot.web.profileControllerTest]: using defaults.
+14:53:42.492 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+14:53:42.549 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c23b97, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36e17b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1ebb5a6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ff475a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@186d391, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4cd2e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@440a09, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@354acc, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@1300f80, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15319cf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1f75fee, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@11a1076, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@ed445a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@16bb829]
+14:53:42.553 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.556 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.559 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.559 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.561 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.562 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.568 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.568 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.570 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.570 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.583 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@aa7cb testClass = profileControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@50a998 testClass = profileControllerTest, locations = '{}', classes = '{class com.hadoyaji.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@8ef833, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@77d63e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@450c16, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1d00572], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+14:53:42.584 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.585 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hadoyaji.book.springboot.web.profileControllerTest]
+14:53:42.594 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@aa7cb testClass = profileControllerTest, testInstance = com.hadoyaji.book.springboot.web.profileControllerTest@f3f912, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@50a998 testClass = profileControllerTest, locations = '{}', classes = '{class com.hadoyaji.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@8ef833, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@77d63e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@450c16, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1d00572], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+14:53:42.652 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2021-06-10 14:53:43.251  INFO 72964 --- [    Test worker] c.h.b.s.web.profileControllerTest        : Starting profileControllerTest on DESKTOP-HN3UIKG with PID 72964 (started by hagyu in C:\workspaceSpring\freelec-springboot2-webservice)
+2021-06-10 14:53:43.254  INFO 72964 --- [    Test worker] c.h.b.s.web.profileControllerTest        : No active profile set, falling back to default profiles: default
+2021-06-10 14:53:45.391  INFO 72964 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-06-10 14:53:45.592  INFO 72964 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 186ms. Found 2 repository interfaces.
+2021-06-10 14:53:46.650  INFO 72964 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebe854cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-10 14:53:47.609  INFO 72964 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-06-10 14:53:47.657  INFO 72964 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-10 14:53:47.658  INFO 72964 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-06-10 14:53:48.047  INFO 72964 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-10 14:53:48.047  INFO 72964 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4735 ms
+2021-06-10 14:53:48.821  INFO 72964 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-10 14:53:49.307  INFO 72964 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-10 14:53:49.531  INFO 72964 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-10 14:53:49.779  INFO 72964 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-06-10 14:53:49.784  INFO 72964 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-06-10 14:53:50.316  INFO 72964 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-06-10 14:53:50.802  INFO 72964 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: drop table if exists posts
+Hibernate: drop table if exists user
+Hibernate: create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=MyISAM
+Hibernate: create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=MyISAM
+2021-06-10 14:53:53.041  INFO 72964 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@11c718d'
+2021-06-10 14:53:53.053  INFO 72964 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-10 14:53:54.798  INFO 72964 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-06-10 14:53:55.888  INFO 72964 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18367c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@a4ff1d, org.springframework.security.web.header.HeaderWriterFilter@189d94d, org.springframework.security.web.authentication.logout.LogoutFilter@1499b9e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@bc3749, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@8ba858, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@13a687b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24b2c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42f95, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@99556d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@91bb5f, org.springframework.security.web.session.SessionManagementFilter@1e1dde2, org.springframework.security.web.access.ExceptionTranslationFilter@168fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e542e0]
+2021-06-10 14:53:57.116  INFO 72964 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-10 14:53:57.302  WARN 72964 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-10 14:53:57.467  INFO 72964 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-10 14:53:58.316  INFO 72964 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-06-10 14:53:58.386  INFO 72964 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55886 (http) with context path ''
+2021-06-10 14:53:58.391  INFO 72964 --- [    Test worker] c.h.b.s.web.profileControllerTest        : Started profileControllerTest in 15.735 seconds (JVM running for 25.386)
+2021-06-10 14:53:58.810  INFO 72964 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-10 14:53:58.812  INFO 72964 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-10 14:53:58.930  INFO 72964 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 118 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2021. 6. 10 오후 2:54:01</p>
+</div>
+</div>
+</body>
+</html>
